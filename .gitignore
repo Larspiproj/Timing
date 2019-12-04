@@ -1,5 +1,5 @@
-./clock_gettime
-./time_with_high_precision
-./busyWaitCalibration
-./time_function
-./timediff
+clock_gettime
+time_with_high_precision
+busyWaitCalibration
+time_function
+timediff

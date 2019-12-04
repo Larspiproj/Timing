@@ -28,8 +28,8 @@ int main() {
 	double result;
 
 	gettimeofday(&start, NULL);
-	//fun();
-	sleep(3);
+	fun();
+	//sleep(3);
 	gettimeofday(&stop, NULL);
 
 	timersub(&stop, &start, &res);
