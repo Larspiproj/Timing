@@ -55,10 +55,12 @@ int main(int argc, char** argv) {
 			(double) ((etime.tv_sec - btime.tv_sec) * BILLION) +
 			(double) (etime.tv_nsec - btime.tv_nsec);
 	int n = (int) 10 / nseconds * BILLION + 0.5;
+	int n2 = (int) 10 / nseconds * BILLION;
 	printf("nseconds: %f\n", nseconds);
 	printf("etime.tv_sec: %f s btime.tv_sec: %f s\n", (double)etime.tv_sec, (double)btime.tv_sec);
 	printf("etime.tv_nsec: %f ns btime.tv_nsec: %f ns\n", (double)etime.tv_nsec, (double)btime.tv_nsec);
 	printf("time = %Lf (s) \n \r", nseconds / BILLION);
 	printf("n = %d \n \r", n);
+	printf("n2 = %d \n \r", n2);
 	return (EXIT_SUCCESS);
 }
